@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "231857025259",
+    "project_id": "somativa-ponto-trabalho",
+    "storage_bucket": "somativa-ponto-trabalho.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231857025259:android:4fdf6000295f18a8a78eae",
+        "android_client_info": {
+          "package_name": "com.example.formativa_ponto_trabalho"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGscr7GDcN8sie3lqYQvm-KcTOy1AjMp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
