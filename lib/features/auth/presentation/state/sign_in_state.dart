@@ -3,10 +3,11 @@ import 'package:formativa_ponto_trabalho/features/auth/domain/usecases/sign_in_u
 import 'package:riverpod/riverpod.dart';
 
 class SignInState {
+  final String? errorMessage;
   final bool isLoading;
   final bool success;
 
-  SignInState({this.isLoading = false, this.success = false});
+  SignInState({this.errorMessage,this.isLoading = false, this.success = false});
 }
 
 class SignInStateNotifier extends Notifier<SignInState>{
@@ -24,7 +25,9 @@ class SignInStateNotifier extends Notifier<SignInState>{
       await signInUseCase.call(email: email, password: password);
       state = SignInState(isLoading: false, success: true);
     } catch(e){
-      state = SignInState(isLoading: false, success: true);
+      state = SignInState(errorMessage: "Error on signing in",isLoading: false, success: false);
     }
   }
 }
+
+final signInNotifierProvider = NotifierProvider<SignInStateNotifier, SignInState>(() => SignInStateNotifier(),);

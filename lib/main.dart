@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:formativa_ponto_trabalho/core/configs/firebase_options.dart';
 import 'package:formativa_ponto_trabalho/features/auth/presentation/screens/sign_in_screen.dart';
 import 'package:formativa_ponto_trabalho/features/auth/presentation/screens/sign_up_screen.dart';
+import 'package:formativa_ponto_trabalho/features/geolocalization/presentation/screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +23,7 @@ class MainApp extends StatelessWidget {
       routes: {
         "/signIn": (context) => const SignInScreen(),
         "/signUp": (context) => const SignUpScreen(),
+        "/": (context) => const HomeScreen(),
       },
     );
   }
