@@ -4,6 +4,7 @@ import 'package:formativa_ponto_trabalho/features/geolocalization/data/repositor
 import 'package:formativa_ponto_trabalho/features/geolocalization/domain/repositories/geolocation_repository.dart';
 
 import '../features/geolocalization/domain/usecases/record_work_point_use_case.dart';
+import '../features/geolocalization/presentation/state/map_state.dart';
 
 final firestoreProvider = Provider((ref) => FirebaseFirestore.instance,);
 
@@ -15,3 +16,7 @@ final recordWorkPointUseCaseProvider = Provider<RecordWorkPointUseCase>((ref) {
   final repository = ref.watch(workPointRepositoryProvider);
   return RecordWorkPointUseCase(repository);
 });
+
+final mapStateProvider = NotifierProvider<MapStateNotifier, MapState>(
+  () => MapStateNotifier(),
+);
