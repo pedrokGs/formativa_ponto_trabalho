@@ -23,7 +23,7 @@ class MainApp extends StatelessWidget {
       routes: {
         "/signIn": (context) => const SignInScreen(),
         "/signUp": (context) => const SignUpScreen(),
-        "/": (context) => const HomeScreen(),
+        "/": (context) => const WorkPointMapPage(),
       },
     );
   }

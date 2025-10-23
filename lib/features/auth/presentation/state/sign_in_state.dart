@@ -1,6 +1,7 @@
-import 'package:formativa_ponto_trabalho/core/dependency_injection/riverpod.dart';
 import 'package:formativa_ponto_trabalho/features/auth/domain/usecases/sign_in_use_case.dart';
 import 'package:riverpod/riverpod.dart';
+
+import '../../../../di/auth_providers.dart';
 
 class SignInState {
   final String? errorMessage;
