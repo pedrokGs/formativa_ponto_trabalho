@@ -108,7 +108,6 @@ class WorkPointStateNotifier extends Notifier<WorkPointState> {
         longitude: state.currentPosition!.longitude,
       );
       await setWorkPointUseCase.execute(workPoint);
-      // Refresh to load the new work point
       await _loadData();
     } catch (e) {
       state = WorkPointState(
