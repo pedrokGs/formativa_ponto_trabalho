@@ -7,4 +7,5 @@ abstract class GeolocationRepository {
   Future<LocationPointEntity> getWorkLocationPoint();
   Future<Position> getCurrentPosition();
   Future<void> recordWorkPoint(WorkPointRecordEntity record);
+  Future<void> setWorkLocationPoint(LocationPointEntity workPoint);
 }

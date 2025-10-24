@@ -59,4 +59,13 @@ class GeolocationRepositoryImpl implements GeolocationRepository {
       'locationPointId': record.locationPointId,
     });
   }
+
+  @override
+  Future<void> setWorkLocationPoint(LocationPointEntity workPoint) async {
+    await firestore.collection('workPoints').doc('main').set({
+      'name': workPoint.name,
+      'latitude': workPoint.latitude,
+      'longitude': workPoint.longitude,
+    });
+  }
 }
