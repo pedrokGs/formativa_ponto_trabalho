@@ -13,7 +13,7 @@ class SignInState {
 
 class SignInStateNotifier extends Notifier<SignInState>{
   late final SignInUseCase signInUseCase;
-  
+
   @override
   SignInState build() {
     signInUseCase = ref.watch(signInUseCaseProvider);

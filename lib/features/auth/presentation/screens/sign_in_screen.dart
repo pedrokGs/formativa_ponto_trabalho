@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:formativa_ponto_trabalho/features/auth/presentation/state/sign_in_state.dart';
 import 'package:formativa_ponto_trabalho/features/auth/presentation/widgets/custom_text_form_field.dart';
 import 'package:formativa_ponto_trabalho/features/auth/presentation/widgets/submit_form_button.dart';
-
 class SignInScreen extends ConsumerWidget {
   const SignInScreen({super.key});
 

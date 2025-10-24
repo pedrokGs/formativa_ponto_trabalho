@@ -1,6 +1,4 @@
-import 'package:equatable/equatable.dart';
-
-class WorkPointRecordEntity extends Equatable {
+class WorkPointRecordEntity {
   final String uid;
   final String userId;
   final DateTime timestamp;
@@ -16,7 +14,4 @@ class WorkPointRecordEntity extends Equatable {
     required this.longitude,
     required this.locationPointId,
   });
-
-  @override
-  List<Object?> get props => [uid, userId, timestamp, latitude, longitude, locationPointId];
 }

@@ -52,7 +52,7 @@ class WorkPointScreen extends ConsumerWidget {
                         children: [
                           TileLayer(
                             urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                            userAgentPackageName: 'com.example.formativa_ponto_trabalho',
+                            userAgentPackageName: 'com.example.formativa_ponto_trabalho', 
                           ),
                           if (state.currentPosition != null)
                             MarkerLayer(

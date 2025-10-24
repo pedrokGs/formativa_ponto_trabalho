@@ -1,6 +1,4 @@
-import 'package:equatable/equatable.dart';
-
-class LocationPointEntity extends Equatable{
+class LocationPointEntity{
   final String uid;
   final String name;
   final double longitude;
@@ -11,7 +9,4 @@ class LocationPointEntity extends Equatable{
   static const LocationPointEntity empty = LocationPointEntity(uid: '', name: '', longitude: 0.00, latitude: 0.00);
 
   bool get isEmpty => this == LocationPointEntity.empty;
-
-  @override
-  List<Object?> get props => [uid, name, longitude, latitude];
 }
